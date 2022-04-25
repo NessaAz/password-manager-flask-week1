@@ -88,7 +88,7 @@ def main():
     print(f"Hello {account_name}, sign up to Password Manager to create a user account.")
     print('\n')
     while True:
-        print("Use these known short codes to operate :\n SU -> SIGN UP.\n DA -> Display your account.\n LN ->LOGIN.\n ex ->exit Pass Word Locker. ")
+        print("Use these known short codes to operate :\n SU -> SIGN UP.\n DA -> Display your account.\n LN ->LOGIN.\n ex ->exit Password Manager. ")
         short_code = input().lower()
         if short_code == 'su':
             print("Create a Password Manager Account")
@@ -191,5 +191,7 @@ def main():
                     break
         else:
                     print("Failed to interpret that. Please use the short codes")
-                    
+
+if __name__ == '__main__':
+    main()                                                
                 
