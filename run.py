@@ -125,4 +125,14 @@ def main():
                 print(f"A New {account_name} Account with the user name  {user_name} has been created.")
                 print(f"You can now login to your {account_name} account using your password.")
                 print ('\n')    
-            
+        elif short_code == 'da':
+             if display_users():
+                 print("Here is your account and your details")
+                 print('\n')
+                 for account in display_users():
+                     print(f"Account name:{account.account_name}  User name: {account.user_name} Password:{account.password}")
+                     print('\n')
+             else:
+                 print('\n')
+                 print("You dont seem to have created an account.Sign up to create a new user account.")
+                 print('\n')    
