@@ -181,4 +181,9 @@ def main():
                         print(f"You have logged out your {account_name} account")
                         print('\n')
                         break
-                              
+            else:
+                print('\n')
+                print("WRONG PASSWORD! PLease enter the correct password to login")
+                print('\n')
+                print('\n')
+                        
