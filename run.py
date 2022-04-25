@@ -81,3 +81,6 @@ def display_credentials():
     return Credentials.display_credentials() 
   
 
+def main():
+    print("Welcome to the Password Manager. What is your name?")
+    
