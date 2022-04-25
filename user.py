@@ -22,10 +22,24 @@ class User:
     def delete_user(self):
     
         '''
-        delete_account is the method to delete a saved user from the user_list
+        delete_user is the method to delete a saved user from the user_list
         '''
 
         User.user_list.remove(self)
         
         
-     
+    @classmethod
+    def user_exist(cls,name):
+        '''
+        Method that checks if a user exists from the user list.
+        Args:
+            name: User name to search if it exists
+        Returns :
+            Boolean: True or false depending if the user exists
+        '''
+        for user in cls.user_list:
+            if user.password == name:
+                    return user
+
+        return False
+ 
