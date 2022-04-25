@@ -23,5 +23,24 @@ def del_user(user):
     '''
     user.delete_user()  
     
+def find_user(name):
+    '''
+    Function that finds a user by name and returns the account
+    '''
+    return User.find_by_user(name)    
+
+def check_existing_users(name):
+    '''
+    Function that check if a user account exists with that name and return a Boolean
+    '''
+    return User.user_exist(name)    
+
+def display_users():
+    '''
+    Function that returns all the saved accounts
+    '''
+    return User.display_accounts()  
+
+
       
 
