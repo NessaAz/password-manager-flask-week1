@@ -186,4 +186,10 @@ def main():
                 print("WRONG PASSWORD! PLease enter the correct password to login")
                 print('\n')
                 print('\n')
-                        
+        elif short_code == "ex":
+                    print(f"Thanks {user_name} for your time.I hope you enjoyed our services. Have a great day")
+                    break
+        else:
+                    print("Failed to interpret that. Please use the short codes")
+                    
+                
