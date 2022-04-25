@@ -144,6 +144,13 @@ def main():
                 print("\033[1;32;1m   \n")
                 print(f"You are now logged in to your {account_name} account")
                 print("\033[1;37;1m   \n")   
-                
+#CREDENTIALS
+                while True:
+                    print('''
+                    Use these short codes:
+                    CA -> Create new credential.
+                    DC -> Display your credentials list
+                    ex ->Log out your credentials account.''')
+                    short_code = input().lower()                
                       
                  
