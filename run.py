@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.10
 
+import string
 from user import User
 from credentials import Credentials
 import random  #importing random module for generating password
@@ -114,5 +115,14 @@ def main():
             print(f"A New {account_name} Account with the user name  {user_name} has been created.")
             print(f"You can now login to your {account_name} account using your password.")
             print ('\n')    
-            
+        elif own_password == "op":
+                print('/n')
+                password = input('Password : ')
+                print ('\n')
+                email_address = input('Email address:')
+                save_users(create_user(account_name,user_name,password,email_address)) 
+                print ('\n')
+                print(f"A New {account_name} Account with the user name  {user_name} has been created.")
+                print(f"You can now login to your {account_name} account using your password.")
+                print ('\n')    
             
