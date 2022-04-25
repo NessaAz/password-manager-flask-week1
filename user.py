@@ -38,7 +38,7 @@ class User:
             Boolean: True or false depending if the user exists
         '''
         for user in cls.user_list:
-            if user.password == name:
+            if user.password == name:   #why not highlighting password
                     return user
 
         return False

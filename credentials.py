@@ -43,6 +43,14 @@ class Credentials:
             Boolean: True or false depending if the credentials exists
         '''
         for credentials in cls.credentials_list:
-            if credentials.password == name:
+            if credentials.password == name:  #why not highlighting password
                     return credentials
-        
+        return False
+    
+    @classmethod
+    def display_credentials(cls):  
+        '''
+        method that returns the credentials list
+        '''
+        return cls.credentials_list            
+                        
