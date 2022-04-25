@@ -172,4 +172,8 @@ def main():
                              for credentials in display_credentials():
                                  print(f"Credential name:{credentials.credentials_name}  User name: {credentials.user_name} Password:{credentials.password}")
                                  print('\n')  
-                 
+                         else:
+                              print('\n')
+                              print("You don't seem to have created any user account yet")
+                              print('\n')
+                              
