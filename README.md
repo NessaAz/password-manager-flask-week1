@@ -13,7 +13,7 @@
 ### SetUp/ Installation Requirements
 - python3.10
 
-# TERMINAL
+# TERMINAL COMMANDS
 ## Cloning
 -  In your terminal
 
@@ -21,7 +21,7 @@
 
    - $ cd password locker
 ## Running the Application
-- $ ./run.py
+- $ python3.10 run.py
 
 ## Testing the Application
 -  To run the tests for the class file and check if it functions well:
