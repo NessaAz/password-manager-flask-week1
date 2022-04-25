@@ -84,3 +84,5 @@ class TestUser(unittest.TestCase):
         displayed = User.display_users()
         self.assertEqual(displayed,User.user_list)
 
+if __name__ == '__main__':
+    unittest.main()
