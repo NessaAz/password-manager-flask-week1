@@ -176,4 +176,9 @@ def main():
                               print('\n')
                               print("You don't seem to have created any user account yet")
                               print('\n')
+                    elif short_code == "ex":
+                        print('\n')
+                        print(f"You have logged out your {account_name} account")
+                        print('\n')
+                        break
                               
