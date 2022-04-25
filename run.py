@@ -165,5 +165,11 @@ def main():
                         print('\n')
                         print(f"A New {credentials_name} Account with the user name  {user_name} has been created.")
                         print ('\n')             
-                      
+                    elif short_code == 'dc':
+                         if display_credentials():
+                             print("Here is your credentials")
+                             print('\n')
+                             for credentials in display_credentials():
+                                 print(f"Credential name:{credentials.credentials_name}  User name: {credentials.user_name} Password:{credentials.password}")
+                                 print('\n')  
                  
