@@ -41,6 +41,15 @@ def display_users():
     '''
     return User.display_accounts()  
 
+#CREDENTIALS
+
+def create_credentials(credentials_name,credaccount_name,password,email):
+    '''
+    Function to create a new credentials account
+    '''
+    new_credentials = Credentials(credentials_name,credaccount_name,password,email)
+    return new_credentials
+
 
       
 
