@@ -10,3 +10,5 @@ class Credentials:
         self.account_name = account_name
         self.password = password
         self.email = email
+        
+        
