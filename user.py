@@ -42,4 +42,9 @@ class User:
                     return user
 
         return False
- 
+    @classmethod
+    def display_accounts(cls):
+        '''
+        method that returns the user account list
+        '''
+        return cls.user_list
