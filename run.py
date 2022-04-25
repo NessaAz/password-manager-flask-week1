@@ -83,4 +83,7 @@ def display_credentials():
 
 def main():
     print("Welcome to the Password Manager. What is your name?")
+    account_name = input()
+    print(f"Hello {account_name}, sign up to Password Manager to create a user account.")
+    print('\n')
     
