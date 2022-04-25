@@ -136,3 +136,14 @@ def main():
                  print('\n')
                  print("You dont seem to have created an account.Sign up to create a new user account.")
                  print('\n')    
+        elif short_code == 'ln':
+            print("Enter your password to login.")
+            search_account = input()
+            if check_existing_users(search_account):
+                search_cred = find_user(search_account)
+                print("\033[1;32;1m   \n")
+                print(f"You are now logged in to your {account_name} account")
+                print("\033[1;37;1m   \n")   
+                
+                      
+                 
