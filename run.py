@@ -50,6 +50,17 @@ def create_credentials(credentials_name,credaccount_name,password,email):
     new_credentials = Credentials(credentials_name,credaccount_name,password,email)
     return new_credentials
 
+def save_credentials(credentials):
+    '''
+    Function to save credentials account
+    '''
+    credentials.save_credentials()    
+
+def del_credentials(credentials):
+    '''
+    Function to delete a credentials account
+    '''
+    credentials.delete_credentials()    
 
       
 
