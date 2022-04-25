@@ -33,13 +33,24 @@ class TestCredentials(unittest.TestCase):
             
     def test_save_multiple_credentials(self):
             '''
-            test_save_multiple_account to check if we can save multiple account
+            test_save_multiple_credentials to check if we can save multiple user credentials
             objects to our account_list
             '''
             self.new_credentials.save_credentials()
             test_credentials = Credentials("Test1","user1","66778899","test1@user.com") # new user
             test_credentials.save_credentials()
-            self.assertEqual(len(Credentials.credentials_list),2)        
+            self.assertEqual(len(Credentials.credentials_list),2)  
+            
+    def test_delete_credentials(self):
+            '''
+            test_delete_credentials to test if we can remove credentials from our credentials list
+            '''
+            self.new_credentials.save_credentials()
+            test_credentials = Credentials("Test1","user1","66778899","test1@user.com") 
+            test_credentials.save_credentials()
+
+            self.new_credentials.delete_credentials()# Deleting an account object
+            self.assertEqual(len(Credentials.credentials_list),1)              
     
     
 
