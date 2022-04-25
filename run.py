@@ -76,7 +76,7 @@ def check_existing_credentials(name):
    
 def display_credentials():  
     '''
-    Function that returns all the saved accounts
+    Function that returns all                                                                               the saved accounts
     '''
     return Credentials.display_credentials() 
   
@@ -96,5 +96,14 @@ def main():
             print ('\n')
             user_name = input('User name:')
             print ('\n')
+            print("to generate password use 'gp' or use your own using 'op'")
+            own_password = input("choice ")
+            if own_password == "gp":
+                def randomStringDigits(stringLength=6):
+                    lettersAndDigits = string.ascii_letters + string.digits
+                    return ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
+                print ("Generating a Random String including letters and digits")
+                print ("First Random String is  ", randomStringDigits(8))
+                
             
             
