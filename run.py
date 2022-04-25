@@ -148,9 +148,22 @@ def main():
                 while True:
                     print('''
                     Use these short codes:
-                    CA -> Create new credential.
+                    CA -> Create a new credential.
                     DC -> Display your credentials list
                     ex ->Log out your credentials account.''')
-                    short_code = input().lower()                
+                    short_code = input().lower()   
+                    if short_code == "ca":
+                        print("Create a new credential")
+                        print('_' * 20)
+                        credentials_name = input('Credential of Social media Name:')
+                        print('\n')
+                        user_name = input(f"{credentials_name} user name:")
+                        print('\n')
+                        print('*' * 20)
+                        password = input(f"{credentials_name} password:")
+                        save_credentials(create_credentials(credentials_name,user_name,password,email_address))
+                        print('\n')
+                        print(f"A New {credentials_name} Account with the user name  {user_name} has been created.")
+                        print ('\n')             
                       
                  
