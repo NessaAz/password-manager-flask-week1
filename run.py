@@ -104,6 +104,15 @@ def main():
                     return ''.join(random.choice(lettersAndDigits) for i in range(stringLength))
                 print ("Generating a Random String including letters and digits")
                 print ("First Random String is  ", randomStringDigits(8))
-                
+            elif own_password == "op":
+                print('/n')
+            password = input('Password : ')
+            print ('\n')
+            email_address = input('Email address:')
+            save_users(create_user(account_name,user_name,password,email_address)) 
+            print ('\n')
+            print(f"A New {account_name} Account with the user name  {user_name} has been created.")
+            print(f"You can now login to your {account_name} account using your password.")
+            print ('\n')    
             
             
