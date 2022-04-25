@@ -62,5 +62,17 @@ def del_credentials(credentials):
     '''
     credentials.delete_credentials()    
 
-      
+def find_credentials(name):
+        '''
+    Function that finds a account by nane and returns the account
+    '''
+    return Credentials.find_by_name(name)    
+
+def check_existing_credentials(name):
+    '''
+    Function that check if an account exists with that name and return a Boolean
+    '''
+    return Credentials.credentials_exist(name)    
+   
+  
 
