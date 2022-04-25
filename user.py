@@ -5,7 +5,7 @@ class User:
     
     user_list = []  #empty user's list
     
-    def __init__(self,user_name,user_name,password,email):
+    def __init__(self,account_name,user_name,password,email):
         self.account_name = user_name
         self.user_name = user_name
         self.password = password
@@ -19,4 +19,11 @@ class User:
 
         User.user_list.append(self)
     
+    def delete_user(self):
     
+        '''
+        delete_account is the method to delete a saved user from the user_list
+        '''
+
+        User.user_list.remove(self)
+     
